@@ -1,0 +1,13 @@
+string-value: value
+int-value: 1
+boolean-value: true
+
+nested-config:
+  nested-value: nestedValue
+
+a:
+  b:
+    c:
+      deep-value: deepValue
+
+layer: application.yml
