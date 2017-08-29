@@ -1,13 +1,13 @@
-package com.hainet.configuration.properties.sample;
+package com.hainet.configuration.properties.sample.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(prefix = "a.b.c")
+@ConfigurationProperties
 @Data
-public class DeepConfig {
+public class NestedConfig {
 
-    private String deepValue;
+    private String nestedValue;
 }

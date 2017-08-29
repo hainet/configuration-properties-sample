@@ -1,4 +1,4 @@
-package com.hainet.configuration.properties.sample;
+package com.hainet.configuration.properties.sample.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
