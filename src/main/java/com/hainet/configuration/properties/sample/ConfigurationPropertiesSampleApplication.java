@@ -38,7 +38,7 @@ public class ConfigurationPropertiesSampleApplication implements CommandLineRunn
         System.out.println(config);
         System.out.println(deepConfig);
 
-        // --spring.profiles.active=random
+        // --spring.config.location=classpath:random.yml
         System.out.println(randomConfig);
     }
 }
