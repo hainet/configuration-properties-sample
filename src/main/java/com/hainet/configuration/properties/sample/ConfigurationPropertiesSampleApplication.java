@@ -32,13 +32,13 @@ public class ConfigurationPropertiesSampleApplication implements CommandLineRunn
     @Override
     public void run(String[] args) {
         // 1: no args
-        // 2: --spring.config.location=classpath:layer-one.yml
-        // 3: --spring.config.location=classpath:layer-one.yml,classpath:layer-two.yml
-        // 4: --spring.config.location=classpath:layer-one.yml,classpath:layer-two.yml --spring.profiles.active=env
+        // 2: --spring.config.location=classpath:/layer-one.yml
+        // 3: --spring.config.location=classpath:/layer-one.yml,classpath:/layer-two.yml
+        // 4: --spring.config.location=classpath:/layer-one.yml,classpath:/layer-two.yml --spring.profiles.active=env
         System.out.println(config);
         System.out.println(deepConfig);
 
-        // --spring.config.location=classpath:random.yml
+        // --spring.config.location=classpath:/random.yml
         System.out.println(randomConfig);
     }
 }
