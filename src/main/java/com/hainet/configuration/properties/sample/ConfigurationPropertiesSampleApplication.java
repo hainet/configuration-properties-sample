@@ -35,6 +35,8 @@ public class ConfigurationPropertiesSampleApplication implements CommandLineRunn
         // 2: --spring.config.location=classpath:/layer-one.yml
         // 3: --spring.config.location=classpath:/layer-one.yml,classpath:/layer-two.yml
         // 4: --spring.config.location=classpath:/layer-one.yml,classpath:/layer-two.yml --spring.profiles.active=env
+        // 5: --spring.config.name=custom-name
+        // 6: --spring.config.name=custom-name --spring.profiles.active=env
         System.out.println(config);
         System.out.println(deepConfig);
 
