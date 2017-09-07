@@ -1,7 +1,0 @@
-some:
-  value: ${random.value}
-  int-value: ${random.int}
-  int-value-less-than-ten: ${random.int(10)}
-  int-value-in-range: ${random.int[1024,65536]}
-  long-value: ${random.long}
-  uuid: ${random.uuid}

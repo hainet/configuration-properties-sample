@@ -2,12 +2,21 @@ string-value: value
 int-value: 1
 boolean-value: true
 
+layer: application.yml
+
 nested-config:
   nested-value: nestedValue
 
 a:
   b:
     c:
-      deep-value: deepValue
+      deep-config:
+        deep-value: deepValue
 
-layer: application.yml
+random-config:
+  value: ${random.value}
+  int-value: ${random.int}
+  int-value-less-than-ten: ${random.int(10)}
+  int-value-in-range: ${random.int[1024,65536]}
+  long-value: ${random.long}
+  uuid: ${random.uuid}
