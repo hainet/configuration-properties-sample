@@ -7,17 +7,17 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ConfigurationPropertiesSampleApplication implements CommandLineRunner {
+public class SpringBootConfigurationProcessorSampleApplication implements CommandLineRunner {
 
     private Config config;
 
     @Autowired
-    public ConfigurationPropertiesSampleApplication(Config config) {
+    public SpringBootConfigurationProcessorSampleApplication(Config config) {
         this.config = config;
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(ConfigurationPropertiesSampleApplication.class, args);
+        SpringApplication.run(SpringBootConfigurationProcessorSampleApplication.class, args);
     }
 
     @Override
