@@ -4,6 +4,8 @@ boolean-value: true
 
 layer: application.yml
 
+list: value1, value2
+
 nested-config:
   nested-value: nestedValue
 
