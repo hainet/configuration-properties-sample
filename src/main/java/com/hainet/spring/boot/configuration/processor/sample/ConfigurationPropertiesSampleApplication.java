@@ -1,6 +1,6 @@
-package com.hainet.configuration.properties.sample;
+package com.hainet.spring.boot.configuration.processor.sample;
 
-import com.hainet.configuration.properties.sample.config.Config;
+import com.hainet.spring.boot.configuration.processor.sample.config.Config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
