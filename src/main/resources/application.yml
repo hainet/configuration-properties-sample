@@ -22,3 +22,6 @@ random-config:
   int-value-in-range: ${random.int[1024,65536]}
   long-value: ${random.long}
   uuid: ${random.uuid}
+
+# If this value is empty, BindException occurs on runtime.
+not-empty: notEmpty

@@ -1,6 +1,7 @@
 package com.hainet.spring.boot.configuration.processor.sample.config;
 
 import lombok.Data;
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
@@ -53,6 +54,9 @@ public class Config {
 
         private String uuid;
     }
+
+    @NotEmpty
+    private String notEmpty;
 
     private String undefinedString;
 
