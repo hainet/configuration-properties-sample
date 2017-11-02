@@ -1,20 +1,16 @@
 package com.hainet.spring.boot.configuration.processor.sample;
 
 import com.hainet.spring.boot.configuration.processor.sample.config.Config;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@RequiredArgsConstructor
 public class SpringBootConfigurationProcessorSampleApplication implements CommandLineRunner {
 
-    private Config config;
-
-    @Autowired
-    public SpringBootConfigurationProcessorSampleApplication(Config config) {
-        this.config = config;
-    }
+    private final Config config;
 
     public static void main(String[] args) {
         SpringApplication.run(SpringBootConfigurationProcessorSampleApplication.class, args);
