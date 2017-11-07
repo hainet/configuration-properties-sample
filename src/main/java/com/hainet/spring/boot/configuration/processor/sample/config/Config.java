@@ -38,14 +38,6 @@ public class Config {
         private String nestedValue;
     }
 
-    private DeepConfig deepConfig;
-
-    @Data
-    @ConfigurationProperties(prefix = "a.b.c")
-    public static class DeepConfig {
-        private String deepValue;
-    }
-
     private RandomConfig randomConfig;
 
     @Data

@@ -25,12 +25,6 @@ hashes:
 nested-config:
   nested-value: nestedValue
 
-a:
-  b:
-    c:
-      deep-config:
-        deep-value: deepValue
-
 random-config:
   value: ${random.value}
   int-value: ${random.int}
