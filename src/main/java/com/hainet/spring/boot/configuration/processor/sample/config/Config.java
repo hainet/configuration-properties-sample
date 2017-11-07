@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
+import java.util.Map;
 
 @Component
 @ConfigurationProperties
@@ -22,7 +23,13 @@ public class Config {
 
     private String layer;
 
+    private String[] array;
+
     private List<String> list;
+
+    private Map<String, Object> hash;
+
+    private List<Map<String, Object>> hashes;
 
     private NestedConfig nestedConfig;
 

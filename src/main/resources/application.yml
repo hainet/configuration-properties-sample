@@ -4,7 +4,23 @@ boolean-value: true
 
 layer: application.yml
 
-list: value1, value2
+array:
+  - foo
+  - bar
+
+list:
+  - foo
+  - bar
+
+hash:
+  foo: foo
+  bar: bar
+
+hashes:
+  - foo: foo
+    bar: bar
+  - foo: foo
+    bar: bar
 
 nested-config:
   nested-value: nestedValue
